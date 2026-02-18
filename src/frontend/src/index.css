@@ -1,0 +1,109 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+    :root {
+        --radius: 0.625rem;
+        
+        /* Rumpum color palette - Green/Teal gradient theme */
+        --background: 0.99 0.005 180;
+        --foreground: 0.15 0.01 200;
+        --card: 1 0 0;
+        --card-foreground: 0.15 0.01 200;
+        --popover: 1 0 0;
+        --popover-foreground: 0.15 0.01 200;
+        --primary: 0.55 0.18 180;
+        --primary-foreground: 0.99 0 0;
+        --secondary: 0.96 0.01 180;
+        --secondary-foreground: 0.15 0.01 200;
+        --muted: 0.96 0.01 180;
+        --muted-foreground: 0.50 0.01 200;
+        --accent: 0.94 0.02 180;
+        --accent-foreground: 0.15 0.01 200;
+        
+        --destructive: 0.55 0.22 25;
+        --destructive-foreground: 0.99 0 0;
+        
+        --border: 0.92 0.01 180;
+        --input: 0.92 0.01 180;
+        --ring: 0.55 0.18 180;
+        
+        /* Chart colors */
+        --chart-1: 0.60 0.20 170;
+        --chart-2: 0.55 0.18 200;
+        --chart-3: 0.65 0.18 150;
+        --chart-4: 0.75 0.15 60;
+        --chart-5: 0.45 0.20 300;
+        
+        /* Rumpum brand colors */
+        --rumpum-teal: 0.60 0.20 170;
+        --rumpum-blue: 0.55 0.18 200;
+    }
+
+    .dark {
+        --background: 0.15 0.01 200;
+        --foreground: 0.98 0.005 180;
+        --card: 0.20 0.015 200;
+        --card-foreground: 0.98 0.005 180;
+        --popover: 0.18 0.015 200;
+        --popover-foreground: 0.98 0.005 180;
+        --primary: 0.65 0.20 170;
+        --primary-foreground: 0.15 0.01 200;
+        --secondary: 0.25 0.02 180;
+        --secondary-foreground: 0.98 0.005 180;
+        --muted: 0.25 0.02 180;
+        --muted-foreground: 0.65 0.01 180;
+        --accent: 0.30 0.025 180;
+        --accent-foreground: 0.98 0.005 180;
+        --destructive: 0.60 0.24 25;
+        --destructive-foreground: 0.98 0 0;
+        --border: 0.30 0.02 180;
+        --input: 0.30 0.02 180;
+        --ring: 0.65 0.20 170;
+        
+        --chart-1: 0.65 0.22 170;
+        --chart-2: 0.60 0.20 200;
+        --chart-3: 0.70 0.20 150;
+        --chart-4: 0.80 0.18 60;
+        --chart-5: 0.55 0.22 300;
+        
+        --rumpum-teal: 0.65 0.22 170;
+        --rumpum-blue: 0.60 0.20 200;
+    }
+
+    * {
+        @apply border-border;
+    }
+    
+    body {
+        @apply bg-background text-foreground;
+        font-feature-settings: "rlig" 1, "calt" 1;
+    }
+}
+
+@layer utilities {
+    .text-rumpum-teal {
+        color: oklch(var(--rumpum-teal));
+    }
+    
+    .bg-rumpum-teal {
+        background-color: oklch(var(--rumpum-teal));
+    }
+    
+    .border-rumpum-teal {
+        border-color: oklch(var(--rumpum-teal));
+    }
+    
+    .text-rumpum-blue {
+        color: oklch(var(--rumpum-blue));
+    }
+    
+    .bg-rumpum-blue {
+        background-color: oklch(var(--rumpum-blue));
+    }
+    
+    .border-rumpum-blue {
+        border-color: oklch(var(--rumpum-blue));
+    }
+}

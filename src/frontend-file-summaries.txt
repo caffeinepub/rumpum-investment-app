@@ -1,0 +1,18 @@
+{
+  "frontend/src/App.tsx": "Main application component with TanStack Router setup, RootLayout component handling authentication state and profile setup flow, and rendering appropriate views with bottom navigation for authenticated users.",
+  "frontend/src/hooks/useQueries.ts": "Custom React Query hooks for all backend operations including user profile, portfolio, live transactions, investment plans, join plan, deposit, and withdraw mutations with proper cache invalidation.",
+  "frontend/src/components/Header.tsx": "Application header with Rumpum branding, gradient background, user profile display, and logout functionality.",
+  "frontend/src/components/Footer.tsx": "Footer component with Rumpum branding attribution and caffeine.ai link.",
+  "frontend/src/components/LoginPrompt.tsx": "Landing page for unauthenticated users featuring Rumpum hero image, feature cards highlighting VIP plans and eSewa integration, and Internet Identity login button.",
+  "frontend/src/components/ProfileSetupModal.tsx": "Modal dialog prompting new users to enter their name on first login with Rumpum branding, preventing dismissal until completed.",
+  "frontend/src/pages/Dashboard.tsx": "Main dashboard page that orchestrates portfolio overview, transaction actions, and transaction history components with error handling.",
+  "frontend/src/components/PortfolioOverview.tsx": "Displays four key metrics cards showing current balance, total deposits, total withdrawals, and profit/loss with return percentage calculation.",
+  "frontend/src/components/TransactionActions.tsx": "Tabbed interface for deposit and withdraw forms with eSewa integration, including amount and transaction ID inputs with gradient-styled buttons.",
+  "frontend/src/components/TransactionHistory.tsx": "Table view of all user transactions with type icons, status badges, amounts, references, and formatted timestamps.",
+  "frontend/src/index.css": "Global styles with Rumpum-inspired OKLCH color system featuring teal and blue gradient colors, supporting both light and dark modes.",
+  "frontend/src/components/BottomNav.tsx": "Bottom navigation bar with four tabs (Home, Product, Team, Mine) using TanStack Router for navigation with active state highlighting.",
+  "frontend/src/pages/HomePage.tsx": "Home page displaying hero banner, launch date, quick action grid, live transactions feed with real-time updates, and customer service section with eSewa contact number.",
+  "frontend/src/pages/ProductPage.tsx": "Investment Market page showing all 5 VIP plans with pricing, daily income, features, and join functionality with active plan indication using proper bigint to number type conversion.",
+  "frontend/src/pages/TeamPage.tsx": "Team page displaying team overview statistics and placeholder for upcoming referral system features.",
+  "frontend/src/pages/MinePage.tsx": "Personal profile page showing user information, portfolio statistics (balance, daily profit, total profits, VIP level), and transaction management."
+}
